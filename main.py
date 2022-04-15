@@ -102,7 +102,7 @@ class Comment(db.Model):
 
 
 # Run following code to generate the DB
-db.create_all()
+# db.create_all()
 
 def dl_register_and_login(email, name, password):
     if User.query.filter_by(email=email).first():
